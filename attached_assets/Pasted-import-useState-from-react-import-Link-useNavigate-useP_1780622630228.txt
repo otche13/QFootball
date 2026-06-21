@@ -1,0 +1,134 @@
+import { useState } from 'react'
+import { Link, useNavigate, useParams } from 'react-router-dom'
+import { HeartIcon } from '../components/icons/NavIcons'
+import { PageHeader } from '../components/layout/PageHeader'
+import { ProductCard } from '../components/ProductCard'
+import { SizePicker } from '../components/SizePicker'
+import { useShop } from '../context/ShopContext'
+import { mockProducts } from '../data/mockProducts'
+import { orderProduct } from '../utils/telegram'
+import './ProductPage.css'
+
+export function ProductPage() {
+  const { id } = useParams()
+  const navigate = useNavigate()
+  const { addToCart, isFavorite, toggleFavorite } = useShop()
+  const product = mockProducts.find((p) => p.id === id)
+  const [selectedSize, setSelectedSize] = useState<string>()
+  const [activeImage, setActiveImage] = useState(0)
+
+  if (!product) {
+    return (
+      <div className="product-page product-page--missing">
+        <p>Товар не найден</p>
+        <Link to="/catalog">В каталог</Link>
+      </div>
+    )
+  }
+
+  const images = product.images ?? [product.image]
+  const related = mockProducts.filter((p) => p.id !== product.id).slice(0, 4)
+
+  const handleBuy = () => {
+    orderProduct(product.name, product.priceFrom, selectedSize)
+  }
+
+  return (
+    <div className="product-page">
+      <PageHeader title={product.name} showBack />
+
+      <div className="product-page__gallery">
+        <div
+          className="product-page__gallery-track"
+          style={{ transform: `translateX(-${activeImage * 100}%)` }}
+        >
+          {images.map((src, index) => (
+            <div key={src} className="product-page__slide">
+              <img src={src} alt={`${product.name} ${index + 1}`} />
+            </div>
+          ))}
+        </div>
+        <div className="product-page__gallery-dots">
+          {images.map((_, index) => (
+            <button
+              key={index}
+              type="button"
+              className={index === activeImage ? 'active' : ''}
+              onClick={() => setActiveImage(index)}
+              aria-label={`Фото ${index + 1}`}
+            />
+          ))}
+        </div>
+      </div>
+
+      <div className="product-page__actions-top">
+        <button
+          type="button"
+          className="product-page__fav-btn"
+          onClick={() => toggleFavorite(product.id)}
+          aria-label="Избранное"
+        >
+          <HeartIcon filled={isFavorite(product.id)} />
+        </button>
+      </div>
+
+      <section className="product-page__info">
+        {product.isOriginal && (
+          <div className="product-page__badge">
+            <span className="product-page__badge-icon">✓</span>
+            Оригинал
+          </div>
+        )}
+        <h1>{product.name}</h1>
+
+        <div className="product-page__cta-row">
+          <button
+            type="button"
+            className="product-page__add-cart"
+            onClick={() => {
+              addToCart(product, selectedSize)
+              navigate('/cart')
+            }}
+          >
+            В корзину
+          </button>
+          <button type="button" className="product-page__buy" onClick={handleBuy}>
+            Купить {product.priceFrom.toLocaleString('ru-RU')} ₽
+          </button>
+        </div>
+
+        <SizePicker
+          sizes={['EU', ...product.sizes]}
+          selected={selectedSize}
+          onSelect={setSelectedSize}
+        />
+
+        {product.description && (
+          <p className="product-page__description">{product.description}</p>
+        )}
+
+        {product.inStock === false && (
+          <div className="product-page__out-of-stock">
+            Нет в наличии — свяжитесь с нами для предзаказа
+          </div>
+        )}
+
+        <button
+          type="button"
+          className="product-page__size-link"
+          onClick={() => navigate('/size-chart')}
+        >
+          📏 Как определить размер обуви
+        </button>
+      </section>
+
+      <section className="product-page__related">
+        <div className="product-page__related-grid">
+          {related.map((p) => (
+            <ProductCard key={p.id} product={p} />
+          ))}
+        </div>
+      </section>
+    </div>
+  )
+}

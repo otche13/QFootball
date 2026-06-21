@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: quality-football
+    env: node
+    region: frankfurt
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    healthCheckPath: /api/products
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        sync: false        # вводишь вручную в Render dashboard
+      - key: BOT_TOKEN
+        sync: false        # токен от @BotFather
+      - key: ADMIN_CHAT_ID
+        sync: false        # твой Telegram ID (узнай у @userinfobot)

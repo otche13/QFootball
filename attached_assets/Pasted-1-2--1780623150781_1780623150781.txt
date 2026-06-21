@@ -1,0 +1,703 @@
+1)в странице товара убери кнопку нет в налчии
+2)айтомы товара везде одинаковым размером что в каталоге что на главном экране 
+3)фильтры можно настроить еще по цене и по размеру
+4)выбор размеры на карточки и на фильтрах сделай в виде 
+ Горизонтального выбора в виде /* размеры */
+
+position: absolute;
+width: 890px;
+height: 44px;
+left: 16px;
+top: 0px;
+
+
+
+/* Frame 22 */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px 20px;
+gap: 16px;
+
+position: absolute;
+width: 890px;
+height: 44px;
+left: 16px;
+top: 0px;
+
+background: #E5EFFF;
+border-radius: 24px;
+
+
+/* EU */
+
+width: 27px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* 37.5 */
+
+position: absolute;
+left: 0%;
+right: -21.74%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Gotham Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+letter-spacing: -0.555812px;
+
+color: #3C3C3C;
+
+
+
+/* 37 */
+
+width: 18px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+flex-grow: 0;
+
+
+/* 37.5 */
+
+position: absolute;
+left: 0%;
+right: -21.74%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Gotham Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+letter-spacing: -0.555812px;
+
+color: #3C3C3C;
+
+
+
+/* 37.5 */
+
+width: 28px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 2;
+flex-grow: 0;
+
+
+/* 37.5 */
+
+position: absolute;
+left: 0%;
+right: -21.74%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Gotham Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+letter-spacing: -0.555812px;
+
+color: #3C3C3C;
+
+
+
+/* 38 */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 3;
+flex-grow: 0;
+
+
+/* 37.5 */
+
+position: absolute;
+left: 0%;
+right: -21.74%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Gotham Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+letter-spacing: -0.555812px;
+
+color: #3C3C3C;
+
+
+
+/* 38.5 */
+
+width: 30px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 4;
+flex-grow: 0;
+
+
+/* 37.5 */
+
+position: absolute;
+left: 0%;
+right: -21.74%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Gotham Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+letter-spacing: -0.555812px;
+
+color: #3C3C3C;
+
+
+
+/* 39 */
+
+width: 20px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 5;
+flex-grow: 0;
+
+
+/* 37.5 */
+
+position: absolute;
+left: 0%;
+right: -21.74%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Gotham Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+letter-spacing: -0.555812px;
+
+color: #3C3C3C;
+
+
+
+/* 39.5 */
+
+width: 29px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 6;
+flex-grow: 0;
+
+
+/* 37.5 */
+
+position: absolute;
+left: 0%;
+right: -21.74%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Gotham Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+letter-spacing: -0.555812px;
+
+color: #3C3C3C;
+
+
+
+/* 40 */
+
+width: 22px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 7;
+flex-grow: 0;
+
+
+/* 37.5 */
+
+position: absolute;
+left: 0%;
+right: -21.74%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Gotham Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+letter-spacing: -0.555812px;
+
+color: #3C3C3C;
+
+
+
+/* 40.5 */
+
+width: 33px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 8;
+flex-grow: 0;
+
+
+/* 37.5 */
+
+position: absolute;
+left: 0%;
+right: -21.74%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Gotham Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+letter-spacing: 0.5px;
+
+color: #3C3C3C;
+
+
+
+/* 41 */
+
+width: 17px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 9;
+flex-grow: 0;
+
+
+/* 37.5 */
+
+position: absolute;
+left: 0%;
+right: -21.74%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Gotham Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+letter-spacing: 0.5px;
+
+color: #3C3C3C;
+
+
+
+/* 42 */
+
+width: 21px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 10;
+flex-grow: 0;
+
+
+/* 37.5 */
+
+position: absolute;
+left: 0%;
+right: -21.74%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Gotham Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+letter-spacing: 0.5px;
+
+color: #3C3C3C;
+
+
+
+/* 42.5 */
+
+width: 32px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 11;
+flex-grow: 0;
+
+
+/* 37.5 */
+
+position: absolute;
+left: 0%;
+right: -21.74%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Gotham Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+letter-spacing: 0.5px;
+
+color: #3C3C3C;
+
+
+
+/* 43 */
+
+width: 21px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 12;
+flex-grow: 0;
+
+
+/* 37.5 */
+
+position: absolute;
+left: 0%;
+right: -21.74%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Gotham Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+letter-spacing: 0.5px;
+
+color: #3C3C3C;
+
+
+
+/* 44 */
+
+width: 21px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 13;
+flex-grow: 0;
+
+
+/* 37.5 */
+
+position: absolute;
+left: 0%;
+right: -21.74%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Gotham Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+letter-spacing: 0.5px;
+
+color: #3C3C3C;
+
+
+
+/* 44.5 */
+
+width: 33px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 14;
+flex-grow: 0;
+
+
+/* 37.5 */
+
+position: absolute;
+left: 0%;
+right: -21.74%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Gotham Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+letter-spacing: 0.5px;
+
+color: #3C3C3C;
+
+
+
+/* 45 */
+
+width: 21px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 15;
+flex-grow: 0;
+
+
+/* 37.5 */
+
+position: absolute;
+left: 0%;
+right: -21.74%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Gotham Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+letter-spacing: 0.5px;
+
+color: #3C3C3C;
+
+
+
+/* 45.5 */
+
+width: 32px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 16;
+flex-grow: 0;
+
+
+/* 37.5 */
+
+position: absolute;
+left: 0%;
+right: -21.74%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Gotham Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+letter-spacing: 0.5px;
+
+color: #3C3C3C;
+
+
+
+/* 46 */
+
+width: 22px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 17;
+flex-grow: 0;
+
+
+/* 37.5 */
+
+position: absolute;
+left: 0%;
+right: -21.74%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Gotham Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+letter-spacing: 0.5px;
+
+color: #3C3C3C;
+
+
+
+/* 46.5 */
+
+width: 32px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 18;
+flex-grow: 0;
+
+
+/* 37.5 */
+
+position: absolute;
+left: 0%;
+right: -21.74%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Gotham Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+letter-spacing: 0.5px;
+
+color: #3C3C3C;
+
+
+
+/* 47 */
+
+width: 21px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 19;
+flex-grow: 0;
+
+
+/* 37.5 */
+
+position: absolute;
+left: 0%;
+right: -21.74%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Gotham Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+letter-spacing: 0.5px;
+
+color: #3C3C3C;
+
+
+
+/* 47.5 */
+
+width: 30px;
+height: 20px;
+
+
+/* Inside auto layout */
+flex: none;
+order: 20;
+flex-grow: 0;
+
+
+/* 37.5 */
+
+position: absolute;
+left: 0%;
+right: -21.74%;
+top: 0%;
+bottom: 0%;
+
+font-family: 'Gotham Pro';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 20px;
+/* identical to box height, or 125% */
+letter-spacing: 0.5px;
+
+color: #3C3C3C;
+
