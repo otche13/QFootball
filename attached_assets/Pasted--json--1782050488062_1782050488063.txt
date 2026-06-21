@@ -1,0 +1,26 @@
+Бекенд должен быть следующим образом :
+У меня есть большой json файл ссылками на бутсы и фото и названия в виде( {
+    "position": 2,
+    "name": "Nike Tiempo Legend 10 Pro TF Шипы Противоскользящие Устойчивые к истиранию Футбольные бутсы Мужские Красные",
+    "url": "https://www.thepoizon.ru/product/nike-tiempo-legend-10-pro-tf-%D1%88%D0%B8%D0%BF%D1%8B-%D0%BF%D1%80%D0%BE%D1%82%D0%B8%D0%B2%D0%BE%D1%81%D0%BA%D0%BE%D0%BB%D1%8C%D0%B7%D1%8F%D1%89%D0%B8%D0%B5-%D1%83%D1%81%D1%82%D0%BE%D0%B9%D1%87%D0%B8%D0%B2%D1%8B%D0%B5-%D0%BA-%D0%B8%D1%81%D1%82%D0%B8%D1%80%D0%B0%D0%BD%D0%B8%D1%8E-%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D0%B1%D1%83%D1%82%D1%81%D1%8B-%D0%BC%D1%83%D0%B6%D1%81%D0%BA%D0%B8%D0%B5-%D0%BA%D1%80%D0%B0%D1%81%D0%BD%D1%8B%D0%B5-8900113863493365",
+    "image": "https://cdn-img.thepoizon.ru/pro-img/cut-img/20250113/f7e29eed27cb4ec5801158b8ab0b099a.jpg?x-oss-process=image/format,webp",
+    "price": "5842.00",
+    "currency": "USD"
+  },
+  {
+    "position": 3,
+    "name": "Adidas F50 Collection Футбольные бутсы Белый Синий Унисекс",
+    "url": "https://www.thepoizon.ru/product/adidas-f50-collection-%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D0%B1%D1%83%D1%82%D1%81%D1%8B-%D0%B1%D0%B5%D0%BB%D1%8B%D0%B9-%D1%81%D0%B8%D0%BD%D0%B8%D0%B9-%D1%83%D0%BD%D0%B8%D1%81%D0%B5%D0%BA%D1%81-8900316479923210",
+    "image": "https://cdn-img.thepoizon.ru/pro-img/origin-img/20260605/7939457a752c44b195e5d923e6c28119.png?x-oss-process=image/format,webp",
+    "price": "7275.00",
+    "currency": "USD"
+  },
+  {
+    "position": 4,
+    "name": "Nike Gato IC In Для помещений Футбольные бутсы Мужские Черные",
+    "url": "https://www.thepoizon.ru/product/nike-gato-ic-in-%D0%B4%D0%BB%D1%8F-%D0%BF%D0%BE%D0%BC%D0%B5%D1%89%D0%B5%D0%BD%D0%B8%D0%B9-%D1%84%D1%83%D1%82%D0%B1%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B5-%D0%B1%D1%83%D1%82%D1%81%D1%8B-%D0%BC%D1%83%D0%B6%D1%81%D0%BA%D0%B8%D0%B5-%D1%87%D0%B5%D1%80%D0%BD%D1%8B%D0%B5-8900100018798561",
+    "image": "https://cdn-img.thepoizon.ru/pro-img/cut-img/20240919/9faf0e8b7e1143a8bb462176882d7e50.jpg?x-oss-process=image/format,webp",
+    "price": "5446.00",
+    "currency": "USD"
+  },
+)—это списокк всех бутс, надо что б магазин отрисовывал данные но учитывать многопоточность так как их очень много (не знаю как тут правильно подойди,  загрузка всего сразу приведет к сбою поэтому тут надо обрисовывать по маленьким частям по 4 или 8, не знаю) при нажатии на айтем бутсов переходим по url бутс, там обрисовывает картинку имя и тд (включая размеры и цены). Когда происходит загрузка пусть айтемы будут какие нибудь красивые когда загрузятся показывают информацию. Сделай так что б можно потом было массажировать, обьсни подробно инструкцию куда вставить данные и много другое включая как это работает)
